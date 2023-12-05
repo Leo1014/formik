@@ -1,0 +1,42 @@
+@use "variables" as v;
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  background-image: v.$main-color;
+  main{
+    background-image: v.$secondary-color;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 500px;
+    padding: 24px;
+    margin: 0 auto;
+    box-shadow: v.$shadow;
+    h3{
+        font-family: v.$font-family;
+        font-weight: 900;
+        margin-bottom: 16px;
+        color:v.$color;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    >p{
+        margin-top: 16px;
+        font-family: v.$font-family;
+        font-weight: 900;
+        font-size: 14px;
+        color:v.$color;
+        text-align: center;
+        padding: 0.6rem;
+        span{
+            font-weight: bolder;
+            color: rgba(0, 0, 0, 0.74);
+            cursor: pointer;
+        }:hover{
+            color: black;
+        }
+    }
+  }
+}

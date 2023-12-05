@@ -1,0 +1,14 @@
+@use "./label" as l;
+@use "./input" as i;
+
+
+form{
+    fieldset{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        @include l.label();
+        @include i.input();
+    }
+}
