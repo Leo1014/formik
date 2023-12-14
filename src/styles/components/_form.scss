@@ -1,8 +1,13 @@
-@use "./label" as l;
-@use "./input" as i;
-
+@use "label" as l;
+@use "input" as i;
+@use "error" as e;
+@use "button" as b;
+@use "forgot" as f;
+@use "./inputPassword" as ip;
 
 form{
+    display: flex;
+    flex-direction: column;
     fieldset{
         border: none;
         display: flex;
@@ -10,5 +15,9 @@ form{
         gap: 6px;
         @include l.label();
         @include i.input();
+        @include e.error();
     }
+    @include b.button();
+    @include f.forgot();
 }
+@include ip.inputPassword();

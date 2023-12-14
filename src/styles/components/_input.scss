@@ -12,10 +12,18 @@
         padding: 4px;
         border: none;
         border-bottom: 1px solid gray;
-        outline: none;
+        outline:none;
+
+        &:invalid[data-focused="true"]{
+            border-bottom: 1px solid v.$error-color;
+        }
+
+        &:invalid[data-focused="true"] ~ p{
+            display: block;
+        }
     }
     p{
-        color:grayo
+        color:rgb(245, 235, 235)
     }
 
 }
